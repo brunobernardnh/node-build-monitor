@@ -16,5 +16,5 @@ before_script:
 #   file: ./release/*
 #   skip_cleanup: true
 #   on:
-#     repo: marcells/node-build-monitor
+#     repo: brunobernardnh/node-build-monitor
 #     tags: true

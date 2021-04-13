@@ -16,7 +16,7 @@
     {
       "name": "Travis",
       "configuration": {
-        "slug": "marcells/node-build-monitor"
+        "slug": "brunobernardnh/node-build-monitor"
       }
     }
   ]

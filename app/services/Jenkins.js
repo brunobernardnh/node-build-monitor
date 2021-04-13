@@ -161,9 +161,15 @@ module.exports = function () {
             return "Unknown";
         },
         simplifyBuild = function (res) {
+            function url_domain(url) {
+                var url = url.replace(/^http:\/\//, '');
+                words = url.split('.');
+                return words[0].replace('one-dev-', '');
+              }
+
             return {
                 id: res.jobId + '|' + res.id,
-                project: res.jobId,
+                project: res.jobId + ' (' + url_domain(res.url) + ')',
                 number: res.number,
                 isRunning: res.building,
                 startedAt: parseDate(res.timestamp),
@@ -187,7 +193,7 @@ module.exports = function () {
                 'To display build details, the url parameter is now published to the client. \n' +
                 'This leads to a security risk, cause your credentials would also be published. \n' +
                 'Please use now the \'username\' and \'password\' options. \n' +
-                'More information on: https://github.com/marcells/node-build-monitor#jenkins \n\n');
+                'More information on: https://github.com/brunobernardnh/node-build-monitor#jenkins \n\n');
         }
 
         requestWithDefaults = request.defaults(makeRequestConfiguration(self.configuration));

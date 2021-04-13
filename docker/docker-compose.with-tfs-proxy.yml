@@ -3,7 +3,7 @@ version: '3'
 services:
   node-build-monitor:
     restart: unless-stopped
-    image: marcells/node-build-monitor
+    image: brunobernardnh/node-build-monitor
     build: .
     links:
       - tfs-proxy

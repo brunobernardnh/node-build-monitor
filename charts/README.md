@@ -1,7 +1,7 @@
 |       Parameter                        |           Description                       |                         Default                     |
 |----------------------------------------|---------------------------------------------|-----------------------------------------------------|
 | `image.pullPolicy`                     | Container pull policy                       | `IfNotPresent`                                      |
-| `image.repository`                     | Container image to use                      | `marcells/node-build-monitor`                           |
+| `image.repository`                     | Container image to use                      | `brunobernardnh/node-build-monitor`                           |
 | `image.tag`                            | Container image tag to deploy               | `latest`                                            |
 | `replicaCount`                         | k8s replicas                                | `1`                                                 |
 | `resources`                            | Container resource                          | `{}`                                                |

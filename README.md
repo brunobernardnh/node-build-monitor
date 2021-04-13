@@ -1,7 +1,7 @@
-[![Build and Release](https://github.com/marcells/node-build-monitor/workflows/Build%20and%20Release/badge.svg)](https://github.com/marcells/node-build-monitor/actions?query=workflow%3A%22Build+and+Release%22)
-[![Build Status](https://travis-ci.org/marcells/node-build-monitor.svg?branch=master)](https://travis-ci.org/marcells/node-build-monitor)
-[![Code Climate](https://codeclimate.com/github/marcells/node-build-monitor/badges/gpa.svg)](https://codeclimate.com/github/marcells/node-build-monitor)
-[![Known Vulnerabilities](https://snyk.io/test/github/marcells/node-build-monitor/badge.svg)](https://snyk.io/test/github/marcells/node-build-monitor)
+[![Build and Release](https://github.com/brunobernardnh/node-build-monitor/workflows/Build%20and%20Release/badge.svg)](https://github.com/brunobernardnh/node-build-monitor/actions?query=workflow%3A%22Build+and+Release%22)
+[![Build Status](https://travis-ci.org/brunobernardnh/node-build-monitor.svg?branch=master)](https://travis-ci.org/brunobernardnh/node-build-monitor)
+[![Code Climate](https://codeclimate.com/github/brunobernardnh/node-build-monitor/badges/gpa.svg)](https://codeclimate.com/github/brunobernardnh/node-build-monitor)
+[![Known Vulnerabilities](https://snyk.io/test/github/brunobernardnh/node-build-monitor/badge.svg)](https://snyk.io/test/github/brunobernardnh/node-build-monitor)
 
 ## node-build-monitor
 
@@ -35,7 +35,7 @@ __Here's a demo:__ [http://builds.mspi.es](http://builds.mspi.es) <sub><sup>([ot
 - [Circle CI](https://www.circleci.com) <sub><sup>([Configuration](#circleci))</sup></sub>
 - [Drone](https://www.drone.io) <sub><sup>([Configuration](#drone))</sup></sub>
 
-Feel free to make a [Fork](https://github.com/marcells/node-build-monitor/fork) of this repository and add another service.
+Feel free to make a [Fork](https://github.com/brunobernardnh/node-build-monitor/fork) of this repository and add another service.
 
 Jump to the [configuration documentation](#configuration) and see how the services are configured.
 
@@ -110,7 +110,7 @@ Supports the [Travis CI](https://travis-ci.org/) build service.
 {
   "name": "Travis",
   "configuration": {
-    "slug": "marcells/node-build-monitor"
+    "slug": "brunobernardnh/node-build-monitor"
   }
 }
 ```
@@ -611,7 +611,7 @@ Supports the [Drone](https://drone.io) build service (version 1.0 minimum)
     "debug": false,
     "url": "drone.company.io",
     "token": "s0meDr0neMachineToken",
-    "slug": "marcells/node-build-monitor"
+    "slug": "brunobernardnh/node-build-monitor"
   }
 }
 ```
@@ -626,7 +626,7 @@ Supports the [Drone](https://drone.io) build service (version 1.0 minimum)
 
 ### Run the standalone version (easiest way)
 
-1. Download the [latest release](https://github.com/marcells/node-build-monitor/releases/latest) for Linux (x64), MacOS (x64) or Windows (x64)
+1. Download the [latest release](https://github.com/brunobernardnh/node-build-monitor/releases/latest) for Linux (x64), MacOS (x64) or Windows (x64)
 2. For MacOS and Linux you need to set the execute permission to run it
     - MacOS: `chmod +x node-build-monitor-macos`
     - Linux: `chmod +x node-build-monitor-linux`
@@ -639,7 +639,7 @@ Supports the [Drone](https://drone.io) build service (version 1.0 minimum)
 1. Pull the repository
 2. Run `npm install`
 3. Place a file `config.json` in the app folder (see the description of the file in the [configuration section](#configuration) above)
-4. *If you connect to services, which are using self signed certificates, then you have to set the environment variable`NODE_TLS_REJECT_UNAUTHORIZED=0`. ([More Info](https://github.com/marcells/node-build-monitor/issues/79))*
+4. *If you connect to services, which are using self signed certificates, then you have to set the environment variable`NODE_TLS_REJECT_UNAUTHORIZED=0`. ([More Info](https://github.com/brunobernardnh/node-build-monitor/issues/79))*
 5. Run the build monitor with `node app/app.js`
 6. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) (switch to fullscreen for the best experience)
 
@@ -676,7 +676,7 @@ Place a file `config.json` next to the `docker-compose.*.yml` and configure the 
     {
       "name": "Travis",
       "configuration": {
-        "slug": "marcells/node-build-monitor"
+        "slug": "brunobernardnh/node-build-monitor"
       }
     }
   ]
